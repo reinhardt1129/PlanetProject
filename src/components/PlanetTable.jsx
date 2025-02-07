@@ -35,23 +35,17 @@ function PlanetTable({ planets }) {
     <table>
       <caption>Planetenliste</caption>
       <thead>
-        <tr>
-          <th></th>
-          {
-            headers.map((header, index) => (
-              <th key={index} onClick={() => handleHeaderClick(header.accessor)}>
-                <div className="header-container">
-                  <span>{header.label}</span>
-                  <Caret accessor={header.accessor} direction={sort.keyToSort === header.accessor ? sort.direction : "acs"} />
-                </div>
-              </th>
-            ))
-          }
-        </tr>
-        <tr>
-          <th colspan={headers.length}></th>
-          <th>{sub_headers.join(" / ")}</th>
-        </tr>
+        <th></th>
+        {
+          headers.map((header, index) => (
+            <th key={index} onClick={() => handleHeaderClick(header.accessor)}>
+              <div className="header-container">
+                <span>{header.label}</span>
+                <Caret accessor={header.accessor} direction={sort.keyToSort === header.accessor ? sort.direction : "acs"} />
+              </div>
+            </th>
+          ))
+        }
       </thead>
       <tbody>
         {

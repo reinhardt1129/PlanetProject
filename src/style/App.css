@@ -68,16 +68,6 @@ table tr:hover {
   background-color: #bdd2db;
 }
 
-
-/* table th div,
-table th div span {
-  background-color: whitesmoke;
-} */
-
-/* table td {
-    border-top: 1px solid #888181;
-} */
-
 table td.icon {
   background-size: 35px;
   background-position: left 5px center;
@@ -169,7 +159,6 @@ th svg.desc {
 
 form {
   background-color: white;
-  /* margin: 2rem 2rem; */
   width: 80%;
   width: fit-content;
   margin: auto;

@@ -20,9 +20,7 @@ export const headers = [
     accessor: "population"
   },
   {
-    label: "Namhafte Bewohner",
+    label: "Namhafte Bewohner (Name /Grösse / Gschlecht)",
     accessor: ""
   },
 ]
-
-export const sub_headers = ["Name (Geburtsjahr)", "Grösse", "Gschlecht"]
